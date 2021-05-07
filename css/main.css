@@ -1,18 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap%27");
-.card {
-  background: url(../bg/6.jpg);
-  background-position: center;
-  font-family: 'Tangerine', cursive;
-  font-size: 36px;
-  font-weight: 500;
-}
-
-.signature {
-  width: 50%;
+@import url("http://fonts.cdnfonts.com/css/harry-potter%27");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap%27%27");
+* {
+  font-family: "Harry Potter", sans-serif;
 }
 
 body {
   height: 100%;
+}
+
+p {
+  font-family: "Tangerine", cursive;
+}
+
+.font-1 {
+  font-family: "Harry Potter", sans-serif;
+}
+
+.letter-bg {
+  background-image: url("/image/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100% !important;
 }
 
 .bg-1 {
