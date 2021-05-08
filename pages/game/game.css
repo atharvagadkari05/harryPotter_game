@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+}
+
+.background {
+	width: 100%;
+     height: 100vh;
+     background: linear-gradient( rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.686) ), url('/image/6.png');
+     background-size: cover;
+     background-position: fixed;
+
+}
+
+.bird {
+	height: 100px;
+	width: 150px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
+
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	 background-color: #fff; background-repeat: repeat-y; background-size: 100% 88px; background-position: 0% 0%; background-image: repeating-linear-gradient(-25deg, #fff, #fff 20px, #df5646 20px, #df5646 40px, #fff 40px, #fff 60px, #1c78a4 60px, #1c78a4 80px); animation: barberpole 4s linear infinite;  
+}
+
+.message {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	top: 12vh;
+	left: 20vw;
+	text-align: center;
+}
+
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: goldenrod;
+	top: 0;
+	left: 0;
+}
+
+.score_val {
+	color: gold;
+}
