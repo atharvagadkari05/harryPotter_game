@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/harry-potter");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap%27");
 * {
   font-family: "Harry Potter", sans-serif;
 }
@@ -7,17 +8,28 @@ body {
   height: 100%;
 }
 
+.font-1 {
+  font-family: "Harry Potter", sans-serif;
+}
+
+.font-2 {
+  font-family: "Tangerine", cursive;
+}
+
+.glow {
+  text-shadow: rgba(46, 130, 255, 0.9) 0px 0px 5px;
+}
+
 .bg-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.686)), to(rgba(0, 0, 0, 0.686))), url("/image/2.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.686)), url("/image/2.jpg");
   background-size: cover;
+  background-position: fixed;
   width: 100%;
 }
 
 section {
   background: rgba(255, 255, 255, 0.15);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
   border-radius: 10px;
