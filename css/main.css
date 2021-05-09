@@ -27,6 +27,10 @@ p {
   width: 100% !important;
 }
 
+.mt-10 {
+  margin-top: 10rem;
+}
+
 .bg-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.686)), to(rgba(0, 0, 0, 0.686))), url("/image/2.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.686)), url("/image/2.jpg");
