@@ -1,1 +1,41 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("http://fonts.cdnfonts.com/css/harry-potter%27");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap%27%27");
+* {
+  font-family: "Harry Potter", sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+p {
+  font-family: "Tangerine", cursive;
+}
+
+.font-1 {
+  font-family: "Harry Potter", sans-serif;
+}
+
+.letter-bg {
+  background-image: url("/image/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100% !important;
+}
+
+.bg-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.686)), to(rgba(0, 0, 0, 0.686))), url("/image/2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.686)), url("/image/2.jpg");
+  background-size: cover;
+  background-position: fixed;
+  width: 100%;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/*# sourceMappingURL=main.css.map */
