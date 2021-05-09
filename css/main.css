@@ -16,6 +16,10 @@ p {
   font-family: "Harry Potter", sans-serif;
 }
 
+.font-2 {
+  font-family: "Tangerine", cursive;
+}
+
 .letter-bg {
   background-image: url("/image/5.jpg");
   background-repeat: no-repeat;

@@ -18,4 +18,4 @@ let randomHouse;
                alert(`You Are Already Selected in ${randomHouse}`);
           }
      })
-    
+   

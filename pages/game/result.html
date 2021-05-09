@@ -40,17 +40,22 @@
 <body class="bg-1 text-light">
 
      <div class="container justify-content-center p-5">
-          <p class="text-light text-center display-3 font-1">Shorting Hat</p>
+          <p class="text-light text-center display-3 font-1">Your Final Score</p>
 
           <section class="d-flex justify-content-center align-items-center flex-column m-5">
                <div class='align-self-center p-lg-5 p-sm-3 shorting-hat'>
-                    <p class="text-light text-center display-4 font-2">" Oh you may not think I'm pretty, but don't
-                         judge
-                         on what you see, I'll eat myself if you can find a smarter hat than me."</p>
+                    <p class="text-light text-center display-4 font-2 name">
+                         Name : Sumit
+                    </p>
+                    <p class="text-light text-center display-4 font-2 house">
+                         House : Ravenclaw
+                    </p>
+                    <p class="text-light text-center display-4 font-2 house">
+                         Your Score : 10
+                    </p>
                     <div class="d-flex justify-content-center">
 
-                         <img src="/image/hat/hat black.png" class="img-fluid 3D-effect hat" alt="" width="350"
-                              data-tilt>
+                         <img src="/image/potter boom.png" class="img-fluid 3D-effect hat" alt="" width="350" data-tilt>
 
                     </div>
                     <!-- hat result -->
@@ -61,17 +66,18 @@
                </div>
           </section>
           <div class="fs-1 d-flex justify-content-lg-between">
+               <a href="/pages/game/game.html" class="text-decoration-none text-light"><i
+                         class="fas fa-angle-double-left glow m-5"></i></a>
                <div id="pageAudio" class="m-5">
                     <!-- Music -->
 
-                    <button id="playpausebtn" class="btn  p-3"></button>
-                    <button id="mutebtn" class="btn  p-3"></button>
+                    <button id="playpausebtn" class="btn p-3"></button>
+                    <button id="mutebtn" class="btn p-3"></button>
                     <a href="/index.html" class="btn btn-warning p-2"><i
                               class="fas fa-home d-flex align-self-center fs-6"></i></a>
 
                </div>
-               <a href="/pages/game/game.html" class="text-decoration-none text-light"><i
-                         class="fas fa-angle-double-right glow m-5"></i></a>
+
 
           </div>
      </div>
@@ -81,6 +87,7 @@
           integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
      </script>
      <script src="sorting-hat.js"></script>
+     <script src="/js/index.js"></script>
      <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
      <script type="text/javascript">
           VanillaTilt.init(document.querySelector(".3d-effect"), {
