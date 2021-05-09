@@ -21,6 +21,9 @@ p{
 .font-1{
      font-family: $font-1;
 }
+.font-2{
+     font-family: $font-2;
+}
 
 .letter-bg{
  background-image: url('/image/5.jpg');
@@ -28,8 +31,10 @@ p{
  background-size: cover;
 
 width: 100% !important;
-    
                                                 
+}
+.mt-10{
+     margin-top: 10rem;
 }
 
 

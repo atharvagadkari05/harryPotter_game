@@ -23,14 +23,13 @@ let score_title =
 	
 // Setting initial game state to start
 let game_state = 'Start';
-
+	
 // Add an eventlistener for key presses
 document.addEventListener('keydown', (e) => {
 	
 // Start the game if enter key is pressed
-if (e.key == 'Enter' &&
-	game_state != 'Play') {
-     
+if (e.key == 'Enter' && game_state != 'Play') {
+	
 	document.querySelectorAll('.pipe_sprite')
 			.forEach((e) => {
 	e.remove();
@@ -62,22 +61,14 @@ function move() {
 		element.remove();
 	} else {
 		// Collision detection with bird and pipes
-		if (
-		bird_props.left < pipe_sprite_props.left +
-		pipe_sprite_props.width &&
-		bird_props.left +
-		bird_props.width > pipe_sprite_props.left &&
-		bird_props.top < pipe_sprite_props.top +
-		pipe_sprite_props.height &&
-		bird_props.top +
-		bird_props.height > pipe_sprite_props.top
+		if ( bird_props.left < pipe_sprite_props.left + pipe_sprite_props.width && bird_props.left + bird_props.width > pipe_sprite_props.left && bird_props.top < pipe_sprite_props.top + pipe_sprite_props.height && bird_props.top + bird_props.height > pipe_sprite_props.top
 		) {
 			
 		// Change game state and end the game
 		// if collision occurs
 		game_state = 'End';
-		message.innerHTML = 'Press Enter To Restart';
-		message.style.left = '28vw';
+		window.location.href = 'result.html';
+
 		return;
 		} else {
 		// Increase the score if player
@@ -113,11 +104,11 @@ function apply_gravity() {
 	// Collision detection with bird and
 	// window top and bottom
 
-	if (bird_props.top <= 0 ||
-		bird_props.bottom >= background.bottom) {
+	if (bird_props.top <= 0 || bird_props.bottom >= background.bottom) {
+		
 	game_state = 'End';
-	message.innerHTML = 'Press Enter To Restart';
-	message.style.left = '28vw';
+	window.location.href = 'result.html';
+	
 	return;
 	}
 	bird.style.top = bird_props.top + bird_dy + 'px';
@@ -129,7 +120,7 @@ requestAnimationFrame(apply_gravity);
 let pipe_seperation = 0;
 	
 // Constant value for the gap between two pipes
-let pipe_gap = 40;
+let pipe_gap = 35;
 function create_pipe() {
 	if (game_state != 'Play') return;
 	

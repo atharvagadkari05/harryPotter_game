@@ -6,24 +6,23 @@
 
 body {
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 }
 
 .background {
-	width: 100%;
-     height: 100vh;
-     background: linear-gradient( rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.686) ), url('/image/6.png');
+	background: linear-gradient( rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.686) ), url('/image/6.png');
      background-size: cover;
      background-position: fixed;
-
+     width: 100vw;
+	height: 100vh;
 }
 
 .bird {
 	height: 100px;
-	width: 150px;
+	width: 160px;
 	position: fixed;
-	top: 40vh;
-	left: 30vw;
+	top: 45vh;
+	left: 40vw;
 	z-index: 100;
 }
 
@@ -33,7 +32,7 @@ body {
 	left: 100vw;
 	height: 70vh;
 	width: 6vw;
-	 background-color: #fff; background-repeat: repeat-y; background-size: 100% 88px; background-position: 0% 0%; background-image: repeating-linear-gradient(-25deg, #fff, #fff 20px, #df5646 20px, #df5646 40px, #fff 40px, #fff 60px, #1c78a4 60px, #1c78a4 80px); animation: barberpole 4s linear infinite;  
+	background-color: #fff; background-repeat: repeat-y; background-size: 100% 88px; background-position: 0% 0%; background-image: repeating-linear-gradient(-25deg, #fff, #fff 20px, #df5646 20px, #df5646 40px, #fff 40px, #fff 60px, #1c78a4 60px, #1c78a4 80px); animation: barberpole 4s linear infinite;  
 }
 
 .message {
@@ -42,8 +41,9 @@ body {
 	height: 10vh;
 	font-size: 10vh;
 	font-weight: 100;
-	top: 12vh;
-	left: 20vw;
+	color: black;
+	top: 10vh;
+	left: 0;
 	text-align: center;
 }
 
@@ -59,5 +59,11 @@ body {
 }
 
 .score_val {
-	color: gold;
+	color: #daa520;
 }
+
+.text-gold{
+	
+	color: goldenrod !important;
+}
+	
